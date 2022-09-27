@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: call and execute action
         id: parser
-        uses: WolfGear-Tech/Action-ParsePR@v1
+        uses: WolfGear-Tech/Action-ParsePR@v1.0.0
         with:
           PR_TITTLE: 'v1.0.0'
 
