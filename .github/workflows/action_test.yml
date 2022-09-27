@@ -1,7 +1,7 @@
 name: action_test
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   run_test:
@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: call and execute action
         id: parser
-        uses: WolfGear-Tech/Action-ParsePR
+        uses: WolfGear-Tech/Action-ParsePR@v1
         with:
-          PR_TITTLE: v1.0.0
+          PR_TITTLE: 'v1.0.0'
 
       - name: print the output
         run: echo ${{ steps.parser.outputs.SEMVER_TAG }}
